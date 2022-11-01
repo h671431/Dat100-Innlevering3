@@ -6,26 +6,54 @@ public class Bilde extends Tekst {
 
 	// TODO - objekt variable
 	
-	public Bilde(int id, String bruker, String dato, String tekst, String url) {
-		throw new UnsupportedOperationException(TODO.constructor("Bilde"));
+	protected int id;
+	protected int likes;
+	protected String bruker;
+	protected String dato;
+	protected String tekst;
+	protected String url;
+	
+	public Bilde(int id, String bruker, String dato, String tekst, String url){
+		
+		Bilde bilde = new Bilde();
+		
+		//throw new UnsupportedOperationException(TODO.constructor("Bilde"));
 	}
 
 	public Bilde(int id, String bruker, String dato, int likes, String tekst, String url) {
-		throw new UnsupportedOperationException(TODO.constructor("Bilde"));
+		
+		Bilde bilde = new bilde();
+		
+		//throw new UnsupportedOperationException(TODO.constructor("Bilde"));
 	}
 	
 	public String getUrl() {
-		throw new UnsupportedOperationException(TODO.method());
+		
+		return url;
+		
+		//throw new UnsupportedOperationException(TODO.method());
 
 	}
 
 	public void setUrl(String url) {
-		throw new UnsupportedOperationException(TODO.method());
+		
+		this.url = url;
+		
+		//throw new UnsupportedOperationException(TODO.method());
 	}
 
 	@Override
 	public String toString() {
-		throw new UnsupportedOperationException(TODO.method ());
+		
+		String s;
+
+		s = Integer.toString(id) + "\n" + bruker + "\n" + dato + "\n" + Integer.toString(likes) + "\n" + url + "\n";
+
+		return s;
+		
+		// BILDE\n1\nOle Olsen\n23-10\n0\net bilde\nhttps://www.picture.com/oo/jpg\n
+		
+		//throw new UnsupportedOperationException(TODO.method ());
 
 	}
 

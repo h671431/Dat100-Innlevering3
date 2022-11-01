@@ -4,7 +4,6 @@ import no.hvl.dat100.jplab11.common.TODO;
 
 public abstract class Innlegg {
 
-	// TODO - deklarering av objektvariable
 
 	private int id;
 	private int likes;
@@ -17,31 +16,26 @@ public abstract class Innlegg {
 
 	public Innlegg(int id, String bruker, String dato) {
 
-		// TODO
 		this.id = id;
 		this.bruker = bruker;
 		this.dato = dato;
 		likes = 0;
 
-		// throw new UnsupportedOperationException(TODO.constructor("Innlegg"));
 	}
 
 	public Innlegg(int id, String bruker, String dato, int likes) {
 
-		// TODO - START
 		this.id = id;
 		this.bruker = bruker;
 		this.dato = dato;
 		this.likes = likes;
 
-		// throw new UnsupportedOperationException(TODO.constructor("Innlegg"));
 	}
 
 	public String getBruker() {
 
 		return bruker;
 
-		// throw new UnsupportedOperationException(TODO.method());
 
 	}
 
@@ -49,14 +43,12 @@ public abstract class Innlegg {
 
 		this.bruker = bruker;
 
-		// throw new UnsupportedOperationException(TODO.method());
 	}
 
 	public String getDato() {
 
 		return dato;
 
-		// throw new UnsupportedOperationException(TODO.method());
 
 	}
 
@@ -64,14 +56,11 @@ public abstract class Innlegg {
 
 		this.dato = dato;
 
-		// throw new UnsupportedOperationException(TODO.method());
 	}
 
 	public int getId() {
 
 		return id;
-
-		// throw new UnsupportedOperationException(TODO.method());
 
 	}
 
@@ -79,15 +68,12 @@ public abstract class Innlegg {
 
 		return likes;
 
-		// throw new UnsupportedOperationException(TODO.method());
-
 	}
 
 	public void doLike() {
 
 		likes += 1;
 
-		// throw new UnsupportedOperationException(TODO.method());
 	}
 
 	public boolean erLik(Innlegg innlegg) {
@@ -97,8 +83,6 @@ public abstract class Innlegg {
 		}
 
 		return false;
-
-		// throw new UnsupportedOperationException(TODO.method());
 
 	}
 
@@ -111,8 +95,6 @@ public abstract class Innlegg {
 
 		return s;
 		// "1\nOle Olsen\n23-10\n7\n"
-
-		// throw new UnsupportedOperationException(TODO.method());
 
 	}
 
