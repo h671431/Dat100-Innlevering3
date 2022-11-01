@@ -7,11 +7,7 @@ public class Tekst extends Innlegg {
 
 	// TODO: objektvariable 
 	
-	protected int id;
-	protected String bruker;
-	protected String dato;
 	protected String tekst;
-	protected int likes;
 	
 	
 	public Tekst () {
@@ -20,23 +16,27 @@ public class Tekst extends Innlegg {
 	
 	public Tekst(int id, String bruker, String dato, String tekst) {
 		
-		Tekst tekst = new tekst();
+		this.id = id;
+		this.bruker = bruker;
+		this.dato = dato;
+		this.tekst = tekst;
 		
-		//throw new UnsupportedOperationException(TODO.constructor("Tekst"));
 	}
 	
 	public Tekst(int id, String bruker, String dato, int likes, String tekst) {
 		
-		Bilde bilde = new bilde();
+		this.id = id;
+		this.bruker = bruker;
+		this.dato = dato;
+		this.tekst = tekst;
+		this.likes = likes;
 		
-		//throw new UnsupportedOperationException(TODO.constructor("Tekst"));
 	}
 	
 	public String getTekst() {
 		
 		return tekst;
 		
-		//throw new UnsupportedOperationException(TODO.method());
 
 	}
 
@@ -44,7 +44,6 @@ public class Tekst extends Innlegg {
 		
 		this.tekst = tekst;
 		
-		//throw new UnsupportedOperationException(TODO.method());
 	}
 
 	@Override
@@ -52,13 +51,12 @@ public class Tekst extends Innlegg {
 		
 		String s;
 
-		s = Integer.toString(id) + "\n" + bruker + "\n" + dato + "\n" + Integer.toString(likes) + "\n" + tekst + "\n";
+		s = "TEKST" + Integer.toString(id) + "\n" + getBruker() + "\n" + getDato() + "\n" + Integer.toString(likes) + "\n" + getTekst() + "\n";
 
 		return s;
 		
 		// TEKST\n1\nOle Olsen\n23-10\n0\nen tekst\n
 		
-		//throw new UnsupportedOperationException(TODO.method());
 
 	}
 	
