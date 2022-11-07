@@ -5,10 +5,10 @@ import no.hvl.dat100.jplab11.common.TODO;
 public abstract class Innlegg {
 
 
-	private int id;
-	private int likes;
-	private String bruker;
-	private String dato;
+	protected int id;
+	protected int likes;
+	protected String bruker;
+	protected String dato;
 
 	public Innlegg() {
 

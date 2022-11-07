@@ -6,32 +6,34 @@ public class Bilde extends Tekst {
 
 	// TODO - objekt variable
 	
-	protected int id;
-	protected int likes;
-	protected String bruker;
-	protected String dato;
-	protected String tekst;
 	protected String url;
+	
 	
 	public Bilde(int id, String bruker, String dato, String tekst, String url){
 		
-		Bilde bilde = new Bilde();
+		this.id = id;
+		this.bruker = bruker;
+		this.dato = dato;
+		this.tekst = tekst;
+		this.url = url;
 		
-		//throw new UnsupportedOperationException(TODO.constructor("Bilde"));
 	}
 
 	public Bilde(int id, String bruker, String dato, int likes, String tekst, String url) {
 		
-		Bilde bilde = new bilde();
+		this.id = id;
+		this.bruker = bruker;
+		this.dato = dato;
+		this.tekst = tekst;
+		this.url = url;
+		this.likes = likes;
 		
-		//throw new UnsupportedOperationException(TODO.constructor("Bilde"));
 	}
 	
 	public String getUrl() {
 		
 		return url;
 		
-		//throw new UnsupportedOperationException(TODO.method());
 
 	}
 
@@ -39,7 +41,6 @@ public class Bilde extends Tekst {
 		
 		this.url = url;
 		
-		//throw new UnsupportedOperationException(TODO.method());
 	}
 
 	@Override
@@ -47,13 +48,12 @@ public class Bilde extends Tekst {
 		
 		String s;
 
-		s = Integer.toString(id) + "\n" + bruker + "\n" + dato + "\n" + Integer.toString(likes) + "\n" + url + "\n";
+		s = "BILDE" + Integer.toString(id) + "\n" + getBruker() + "\n" + getDato() + "\n" + Integer.toString(likes) + "\n" + getUrl() + "\n";
 
 		return s;
 		
 		// BILDE\n1\nOle Olsen\n23-10\n0\net bilde\nhttps://www.picture.com/oo/jpg\n
 		
-		//throw new UnsupportedOperationException(TODO.method ());
 
 	}
 

@@ -8,6 +8,7 @@ public class Blogg {
 	// TODO: objektvariable 
 
 	public Blogg() {
+		
 		throw new UnsupportedOperationException(TODO.constructor("Blogg"));
 	}
 
@@ -16,6 +17,7 @@ public class Blogg {
 	}
 
 	public int getAntall() {
+		
 		throw new UnsupportedOperationException(TODO.method());
 	}
 	
